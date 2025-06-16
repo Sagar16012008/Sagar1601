@@ -1,0 +1,32 @@
+<!-- index.html -->
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <title>Progress bar</title>
+        <style>
+            .progress-bar-container {
+                width: 1000px;
+                max-width: 300px;
+                height: 25px;
+                background-color: #eee;
+                border-radius: 12px;
+                overflow: hidden;
+            }
+            .progress-bar {
+                width: 0%;
+                height: 100%;
+                background-color: #76c70c;
+                animation: loadProgress 3s forwards;
+            }
+            @keyframes loadProgress {
+                from {width: 0%;}
+                to {width: 100%;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+        </div>
+    </body>
+ </html>
